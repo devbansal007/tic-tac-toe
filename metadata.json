@@ -1,0 +1,6 @@
+{
+  "name": "TicTacToe Master",
+  "description": "A modern, tactical Tic Tac Toe game with unbeatable Minimax AI, pass & play multiplayer, customizable grids, crisp sound effects, and themes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
