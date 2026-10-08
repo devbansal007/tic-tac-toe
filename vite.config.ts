@@ -9,11 +9,14 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(() => {
   return {
-    base: './',
     plugins: [react(), tailwindcss()],
     resolve: {
+      preserveSymlinks: true,
+      extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
       alias: {
         '@': path.resolve(__dirname, '.'),
+        '/src': path.resolve(__dirname, 'src'),
+        './src': path.resolve(__dirname, 'src'),
       },
     },
     server: {
