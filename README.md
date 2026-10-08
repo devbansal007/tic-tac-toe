@@ -1,6 +1,3 @@
-
-
-
 # TicTacToe Master
 
 A modern, tactile, and highly competitive Tic Tac Toe game built with React, TypeScript, Tailwind CSS, and Motion. Features an unbeatable Minimax AI, Pass & Play local multiplayer, expandable board dimensions, synthesized tactile audio, and multiple visual themes.
@@ -81,3 +78,20 @@ npm install
 
 # Start the local development server
 npm run dev
+```
+
+Visit `http://localhost:3000` in your browser.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📖 Rules & Strategy Guide
+
+1. **Center Control (3×3)**: Controlling the center cell provides access to 4 possible winning paths (horizontal, vertical, and both diagonals).
+2. **The Corner Fork**: Placing marks in opposite corners forces opponent defensive responses and can create two winning threats simultaneously.
+3. **Vs Grandmaster AI**: The Grandmaster AI evaluates every possible future move down to terminal game states. The best achievable outcome against it is a draw!
